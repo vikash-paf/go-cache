@@ -1,0 +1,23 @@
+[
+  {
+    "label": "Debug main package",
+    "adapter": "Delve",
+    "program": "${ZED_WORKTREE_ROOT}/cmd/server",
+    "request": "launch",
+    "mode": "debug"
+  },
+  {
+    "label": "Debug current file",
+    "adapter": "Delve",
+    "program": "$ZED_FILE",
+    "request": "launch",
+    "mode": "debug"
+  },
+  {
+    "label": "Run tests in current package",
+    "adapter": "Delve",
+    "program": "$ZED_DIRNAME",
+    "request": "launch",
+    "mode": "test"
+  }
+]
